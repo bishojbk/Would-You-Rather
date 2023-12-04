@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.cdnfonts.com/css/starcruiser");
+
 .pushable {
   position: relative;
   background: transparent;
@@ -87,4 +89,8 @@
 
 .pushable:focus:not(:focus-visible) {
   outline: none;
+}
+
+.name {
+  font-family: "Starcruiser Expanded", sans-serif;
 }

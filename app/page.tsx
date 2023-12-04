@@ -7,7 +7,7 @@ const Home: React.FC = () => {
   const router = useRouter();
 
   const handlePlay = () => {
-    router.push("/game");
+    router.push("/start");
   };
 
   return (
@@ -29,6 +29,8 @@ const Home: React.FC = () => {
         <span className="edge"></span>
         <span className="front">PLAY</span>
       </button>
+
+      <span className="fixed bottom-0 right-0 text-white name">EJR</span>
     </main>
   );
 };
