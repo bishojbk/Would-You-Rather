@@ -8,4 +8,4 @@ git clone https://github.com/bishojbk/Would-You-Rather.git
 
 yarn install
 
-yarn dev / yarn run dev
+yarn dev
