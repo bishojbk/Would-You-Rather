@@ -22,7 +22,6 @@ const Home: React.FC = () => {
       const replacedFirstHalf = firstHalf
         .replace("Would you rather", "")
         .trim();
-      console.log(data);
 
       const capitalizedFirstHalf =
         replacedFirstHalf.charAt(0).toUpperCase() + replacedFirstHalf.slice(1);
@@ -49,19 +48,19 @@ const Home: React.FC = () => {
 
   return (
     <main className="flex flex-col items-center justify-center gap-8 h-screen bg-black">
-      <h2 className="text-6xl text-white">WOULD YOU RATHER?</h2>
+      <h2 className="text-7xl text-white">WOULD YOU RATHER?</h2>
       <div className={"flex items-center justify-center gap-8"}>
         <div
-          className="bg-[#55bfe7] h-52 w-96 text-center text-black flex items-center justify-center text-2xl px-16 text-shadow cursor-pointer"
+          className="bg-[#55bfe7] transition duration-300 hover:bg-[#55bff9] hover:scale-95 h-52 w-96 text-center text-black flex items-center justify-center text-2xl px-16 text-shadow cursor-pointer"
           onClick={handleBoxClick}
         >
           {firstHalf}
         </div>
-        <div className="absolute text-white text-5xl h-32 w-32 rounded-full bg-black flex items-center justify-center text-shadow">
+        <div className="absolute z-10 text-white text-5xl h-32 w-32 rounded-full bg-black flex items-center justify-center text-shadow">
           OR
         </div>
         <div
-          className="bg-[#e02c2d] h-52 w-96 text-center text-white flex items-center justify-center text-2xl px-16 text-shadow cursor-pointer"
+          className="bg-[#e02c2d] transition duration-300 hover:bg-[#e02c10] hover:scale-95 h-52 w-96 text-center text-white flex items-center justify-center text-2xl px-16 text-shadow cursor-pointer"
           onClick={handleBoxClick}
         >
           {secondHalf}

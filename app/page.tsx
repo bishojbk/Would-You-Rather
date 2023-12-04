@@ -24,11 +24,10 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <button
-        className="text-white text-4xl border border-white rounded px-2 py-1 hover:bg-slate-900 transition duration-200"
-        onClick={handlePlay}
-      >
-        PLAY
+      <button className="pushable" onClick={handlePlay}>
+        <span className="shadow"></span>
+        <span className="edge"></span>
+        <span className="front">PLAY</span>
       </button>
     </main>
   );
